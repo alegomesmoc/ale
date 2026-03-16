@@ -1,0 +1,4 @@
+meu_set = {"Maça", "Goiba", "Jilo"}
+meu_setnew = {"Amora", "Pera", "pana"}
+meu_set.Atualização(meu_setnew)
+Impresso (meu_setnew)
