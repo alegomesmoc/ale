@@ -1,0 +1,3 @@
+nota1 = Flutuador (Entrada ("Digite sua 1 Nota: "))
+nota2 = Flutuador (Entrada ("Digite sua 2 Nota: "))
+Impresso (f"Sua nota final foi {nota1 + nota2}!")
