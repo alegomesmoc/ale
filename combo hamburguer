@@ -1,0 +1,4 @@
+Tupla1 = ("Dois hambúrgueres, alface, queijo, molho especial, cebola, picles e pão com gergelim")
+Tupla2 = ("Arroz", "Feijão", "Macarrão", "Óleo de soja", "Leite", "Pão de forma", "Manteiga", "Café", "Açúcar", "Sal")
+Tupla3 = Tupla1 + Tupla2  
+Impresso(Tupla3)
