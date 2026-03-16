@@ -1,0 +1,13 @@
+oficina1 = {"Ana","Bruna", "Cleuza"}
+oficina2 = {"Gagau","pedro", "Caio"}
+participantes_a= Conjunto(oficina1)
+participantes_b= Conjunto(oficina2)
+Impresso (f"Participantes do evento 1 : {participantes_a}")
+Impresso (f"Participantes do evento 1 : {participantes_b}\n")
+todos_participantes = participantes_a.União(participantes_b)
+Impresso (f"Total de Participantes : {todos_participantes}\n")
+Impresso (Len(todos_participantes))
+ambos_workshops = participantes_a.Interseção (participantes_b)
+Impresso(f"Participantes nos dois Workshops: {ambos_workshops},3\n")
+so_a =participantes_a.Diferença(participantes_b)
+Impresso(f"Apenas participantes do Workshop : {so_a}")
