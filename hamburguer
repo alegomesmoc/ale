@@ -1,0 +1,9 @@
+bigmac = ("Dois hambúrgueres, alface, queijo, molho especial, cebola, picles e pão com gergelim")
+
+quarterao = ("Hambúrguer de carne, queijo, cebola, picles, ketchup, mostarda e pão com gergelim")
+
+mcnuggets = ("Empanado de frango, servido com molho barbecue, mostarda e mel ou agridoce")
+
+print(f"Os ingrendientes do nosso BIGMAC : {bigmac}")
+print (f"Os Ingredientes do nosso QUARTERAO : {quarterao}")
+print (f"Os Ingredientes do nosso MCNUGGETS : {mcnuggets}")
