@@ -1,0 +1,4 @@
+supermercado = ("Arroz", "Feijão", "Macarrão", "Óleo de soja", "Leite", "Pão de forma", "Manteiga", "Café", "Açúcar", "Sal")
+
+for x in supermercado:
+    print (x)
