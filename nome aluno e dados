@@ -1,0 +1,15 @@
+Aluno1 = ("João", 16, "Masculino", "Ensino Médio")
+Nome, idade, sexo, Escolaridade = Aluno1
+Impresso(f"Meu nome é {Nome}, tenho {idade} anos, sou do sexo {sexo} e estou no {Escolaridade}.")
+Aluno2 = ("Maria", 14, "Feminino", "Ensino Fundamental")
+Nome, idade, sexo, Escolaridade = Aluno2
+Impresso(f"Meu nome é {Nome}, tenho {idade} anos, sou do sexo {sexo} e estou no {Escolaridade}.")
+Aluno3 = ("Carlos", 18, "Masculino", "Ensino Médio")
+Nome, idade, sexo, Escolaridade = Aluno3
+Impresso(f"Meu nome é {Nome}, tenho {idade} anos, sou do sexo {sexo} e estou no {Escolaridade}.")
+Aluno4 = ("Ana", 17, "Feminino", "Ensino Médio")
+Nome, idade, sexo, Escolaridade = Aluno4
+Impresso(f"Meu nome é {Nome}, tenho {idade} anos, sou do sexo {sexo} e estou no {Escolaridade}.")
+Aluno5 = ("Lucas", 15, "Masculino", "Ensino Fundamental")
+Nome, idade, sexo, Escolaridade = Aluno5
+Impresso(f"Meu nome é {Nome}, tenho {idade} anos, sou do sexo {sexo} e estou no {Escolaridade}.")
