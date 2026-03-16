@@ -1,0 +1,3 @@
+professor = ("Alexandre", 19, 10000)
+nome, idade, pretensao_salarial = professor 
+print (f"Meu é {nome} tenho {idade} anos  e quero ganhar no futuro R${pretensao_salarial}")
