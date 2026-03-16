@@ -1,0 +1,7 @@
+carro = {
+    "Nome": "Chevette",
+    "Marca" : "Cherolet",
+    "Ano" : 1990,
+    "Cor" :"Verdão"
+    }
+Impresso (carro ["Nome"])
