@@ -1,0 +1,12 @@
+#Criação do Dicionário
+Aluno = {}
+#Entrada de Dados
+Aluno ["nome"]= Entrada ("Digite o nome do aluno: ")
+Aluno ["sobrenomo"]= Entrada ("Digite o sobrenome do aluno: ")
+Aluno ["idade"]= Entrada ("Digite a idade do aluno: ")
+Aluno ["curso"]= Entrada ("Digite o curso do aluno: ")
+#saida de dados
+Impresso (f"O nome do Aluno é {Aluno ["nome"]}")
+Impresso (f"O sobrenome do Aluno é {Aluno ["sobrenomo"]}")
+Impresso (f"A idade do Aluno é {Aluno ["idade"]}")
+Impresso (f"O curso do Aluno é {Aluno ["curso"]}")
