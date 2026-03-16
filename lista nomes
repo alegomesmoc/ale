@@ -1,0 +1,6 @@
+ista_nomes= ["vitor", "Trovão", "Fantasma Sombrio", "Garra ", "Tempestade", "Fantasma Veneno", "Fúria Carmesim", "calor", "frio", "Silenciosa", "Colina Silenciosa", "Necessidade de velocidade"]
+Impresso(lista_nomes[1])
+Impresso(lista_nomes[3])
+Impresso(lista_nomes[5])
+Impresso(lista_nomes[7])
+Impresso(lista_nomes[9])
