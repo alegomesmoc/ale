@@ -1,0 +1,7 @@
+idade = 18
+
+if idade >= 18:
+    print ("Vc e de maior e poder ser deido")
+elif idade > 70:
+    print ("Vc n pode ser detido em casa ")
+    
