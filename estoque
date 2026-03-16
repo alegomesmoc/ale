@@ -1,0 +1,22 @@
+estoque = {
+    "camisa": 150,
+    "calça": 15,
+    "osso": 25,
+    "tenis de naique": 35
+    }
+#Mostrar estoque atual
+Impresso ("Estoque Atual : ")
+para produto, quantidade em estoque.Itens():
+    Impresso (f"{produto} : {quantidade}") 
+#Pedido Dados para o usuário do sistema
+    nome_produto =Entrada("\nInforme o nome do produt vendido : ")
+    quantidade_vendida = int(Entrada("\nInforme a quantidade vendida : "))
+#Atualizar o estoque
+se nome_produto em estoque:
+    se quantidade_vendida <= estoque[nome_produto]:
+        estoque[nome_produto] = estoque[nome_produto] - quantidade_vendida
+        Impresso("Venda realizada com sucesso!! Camisa")
+senão:
+    Impresso("Produto não encontradao")
+para produto,quantidade em estoque.Itens():
+    Impresso(f"{produto}| {quantidade}")
