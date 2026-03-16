@@ -1,0 +1,13 @@
+Carlos = {"Melão","Maça", "Laranja"}
+Pedro = {"Melão","banana", "Abobora"}
+Lucas = {"Melão","Melancia", "Abobora"}
+Aleks = {"Melão","banana", "Pão"}
+cliente_a = Conjunto(Carlos)
+cliente_b = Conjunto(Pedro)
+cliente_c = Conjunto(Lucas)
+cliente_d = Conjunto(Aleks)
+ambos_clientes = Carlos.Interseção(Carlos,Pedro,Lucas,Aleks)
+Impresso(f"Itens em comum: {ambos_clientes}")
+ambos_clientes = Carlos.União(Carlos, Pedro, Lucas,Aleks)
+Impresso (f"Itens Totas: {ambos_clientes}\n")
+Impresso (Len(ambos_clientes))
