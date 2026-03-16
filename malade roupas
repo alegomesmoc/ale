@@ -1,0 +1,4 @@
+mala1= {"Blusa", "Cueca", "Meia"}
+mala2 = {"Calça", "Desodorante", "Blusa de frio"}
+mala1.update(mala2)
+Impressão (mala1)
