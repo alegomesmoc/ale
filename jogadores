@@ -1,0 +1,18 @@
+jogadores = {}
+para i em Distribuição(5):
+    Nome = Entrada("Digite o nome do jogador: ")
+    Pontos = int(Entrada("Digite os pontos iniciais: "))
+    jogadores[Nome] = Pontos
+Impresso("\nTabela Inicial de Pontos:")
+para Jogador, Pontos em jogadores.Itens():
+    Impresso(f"{Jogador} : {Pontos}")
+Nome = Entrada("\nDigite o nome do jogador: ")
+Pontos = int(Entrada("Digite a quantidade de pontos conquistados: "))
+se Nome em jogadores:
+    jogadores[Nome] = jogadores[Nome] + Pontos
+    Impresso("Pontuação atualizada com sucesso!")
+senão:
+    Impresso("Jogador não encontrado!")
+Impresso("\nTabela Atualizada:")
+para Jogador, Pontos em jogadores.Itens():
+    Impresso(f"{Jogador} | {Pontos}")
