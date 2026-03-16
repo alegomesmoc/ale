@@ -1,0 +1,7 @@
+#INICIO DO CODIGO
+produto = "Caderno"
+quantidade = 2
+preco_unitario = 3500.52
+resultado = f"O resumo da sua compra é : {quantidade * preco_unitario: .1f}"
+Impresso (resultado)
+                                     
