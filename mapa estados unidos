@@ -1,0 +1,66 @@
+<!DOCTYPE html >
+< meta  charset =" utf-8 " >
+< estilo >
+
+caminho {
+  preenchimento :  # ccc ;
+  acidente vascular cerebral : nenhum;
+}
+
+. cidades {
+  preenchimento : azul;
+}
+
+</ estilo >
+< corpo >
+< script  src = " http://d3js.org/d3.v3.min.js " > </script>​
+< script  src = " http://d3js.org/topojson.v1.min.js " > </script>​
+< script  src = " smallMap.js " > </script>    
+var  largura  =  960 ,
+    altura  =  500 ;
+
+// Define o tamanho do mapa e sua localização na tela
+var  projeção  =  d3 . geo . albersEUA ( )
+	. traduzir ( [ 100 , 100 ] )
+    . escala ( [ 200 ] ) ;
+
+var  path  =  d3.geo.path ( ) . projection ( projection ) ;​​​​
+
+// lista de cidades a serem exibidas e locais
+var  citiesData  =  [ { "city" : "Chicago" ,  location : { "lat" : 41.87811 ,  "long" : - 87.62980 } } ,
+				  { "cidade" : "Nova Orleans" ,  localização : { "lat" : 29.95107  ,  "long" : - 90.07153 } } ,
+				  { "cidade" : "Seattle" ,  localização : { "lat" : 47.60621 ,  "long" : - 122.33207 } } ,
+				  { "cidade" : "Boston" ,  localização : { "lat" :   42.35849 ,  "long" : - 71.06010 } } ] ;
+
+// Configuração SVG normal
+var  svg  =  d3 . select ( "body" ) . append ( "svg" )
+    .attr ( "largura " , largura ) 
+    . attr ( "altura" ,  altura ) ;
+
+// ler em geometria americana
+d3.json ( " us.json " , function ( error , topology ) {   
+
+  // Limitar aos Estados Unidos continentais
+  topologia . objetos . cb_2013_us_state_20m . geometrias  = 
+  	topologia . objetos . cb_2013_us_state_20m . geometrias . filtro (
+  		função ( d ) { if ( [ "Alasca" ,  "Havaí" ,  "Porto Rico" ] . indexOf ( d . id )  ==  - 1 ) { return  d } }
+  		)
+  // anexar caminho para a fronteira dos EUA
+  svg.append ( " caminho " )
+      .datum ( topojson . feature ( topology , topology . objects . cb_2013_us_state_20m ) )​ 
+      . attr ( "d" ,  caminho ) ;
+ 
+  // adicionar cidades
+  svg.append ( " g " )
+    . attr ( "classe" ,  "cidades" )
+  . selecionarTudo ( "círculo" )
+    . dados ( dadosCidades )
+  . entrar ( ) . adicionar ( "círculo" )
+    . attr ( "transform" ,  function ( d )  {
+    	retornar  "translate("  +  projeção ( [
+      		d . localização . longa ,
+      		d . localização . lat.
+    		] )  +  ")"
+  		} )
+    . attr ( "r" ,  3 ) ;
+} ) ;
